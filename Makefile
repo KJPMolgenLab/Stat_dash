@@ -19,7 +19,7 @@ run_app:
 	mkdir -p pages_files/assets
 
 	ls -a pages_files
-	ls -a pages_files/assets
+	#ls -a pages_files/assets
 
 	find pages_files -exec sed -i.bak 's|_dash-component-suites|Stat_dash\\/_dash-component-suites|g' {} \;
 	find pages_files -exec sed -i.bak 's|_dash-layout|Stat_dash/_dash-layout.json|g' {} \;
@@ -30,7 +30,7 @@ run_app:
 
 	mv pages_files/_dash-layout pages_files/_dash-layout.json
 	mv pages_files/_dash-dependencies pages_files/_dash-dependencies.json
-	mv assets/* pages_files/assets/
+	#mv assets/* pages_files/assets/
 
 	ps -C python -o pid= | xargs kill -9
 

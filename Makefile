@@ -16,8 +16,10 @@ run_app:
 	wget -r http://127.0.0.1:8050/_dash-component-suites/plotly/package_data/plotly.min.js
 
 	mv 127.0.0.1:8050 pages_files
+	mkdir -p pages_files/assets
+
 	ls -a pages_files
-	#ls -a pages_files/assets
+	ls -a pages_files/assets
 
 	find pages_files -exec sed -i.bak 's|_dash-component-suites|Stat_dash\\/_dash-component-suites|g' {} \;
 	find pages_files -exec sed -i.bak 's|_dash-layout|Stat_dash/_dash-layout.json|g' {} \;

@@ -1,0 +1,30 @@
+name: organoid_clean
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip 
+  - ipykernel
+  - ipywidgets
+  - jupyter_contrib_nbextensions
+  - ipympl
+  - dash
+  - numpy
+  - mplcursors
+  - pandas
+  - conda-forge::umap-learn
+  - dask
+  - scikit-image
+  - scikit-learn
+  - umap-learn
+  - plotly
+  - matplotlib
+  - pip:
+    - dask[distributed]
+    - openpyxl
+    - dash_bootstrap_components
+    - kaleido
+    - datetime
+    - gunicorn
+    - opencv-python
+

@@ -19,6 +19,7 @@ import plotly.io as pio
 # Initialize the Dash app
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
+server = app.server
 
 # Define the layout of the app
 app.layout = dbc.Container([

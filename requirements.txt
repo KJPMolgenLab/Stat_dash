@@ -3,9 +3,6 @@ dash
 dash_bootstrap_components
 numpy
 pandas
-umap-learn
-dask
-opencv-python
 scikit-image
 scikit-learn
 plotly

@@ -19,5 +19,4 @@ plotly
 matplotlib
 mplcursors
 openpyxl
-base64
 io
